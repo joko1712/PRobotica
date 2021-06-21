@@ -1,180 +1,208 @@
-<!DOCTYPE html>
-<html nighteye="disabled" lang="en"><head>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet">
+
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
 
-    <title>Product example for Bootstrap</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/product/">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="app.css">
 
-    <!-- Bootstrap core CSS -->
-    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Projeto Robótica</title>
+</head>
 
-    <!-- Custom styles for this template -->
-    <link href="product.css" rel="stylesheet">
-  </head>
+<body>
 
-  <body>
-
-    <nav class="site-header sticky-top py-1">
-      <div class="container d-flex flex-column flex-md-row justify-content-between">
-        <a class="py-2" href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mx-auto"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
-        </a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Tour</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Product</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Features</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Enterprise</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Support</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Pricing</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Cart</a>
-      </div>
-    </nav>
-
-    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-      <div class="col-md-5 p-lg-5 mx-auto my-5">
-        <h1 class="display-4 font-weight-normal">Punny headline</h1>
-        <p class="lead font-weight-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple's marketing pages.</p>
-        <a class="btn btn-outline-secondary" href="#">Coming soon</a>
-      </div>
-      <div class="product-device box-shadow d-none d-md-block"></div>
-      <div class="product-device product-device-2 box-shadow d-none d-md-block"></div>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+            <a href="#home" class="w3-bar-item w3-button"><b>Projeto</b> Robótica</a>
+            <div class="w3-right w3-hide-small">
+                <a href="#mdl_fanuc10L" class="w3-bar-item w3-button">mdl_fanuc10L</a>
+                <a href="#mdl_stanford" class="w3-bar-item w3-button">mdl_stanford</a>
+                <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+            </div>
+        </div>
     </div>
 
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-      <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-        <div class="my-3 py-3">
-          <h2 class="display-5">Another headline</h2>
-          <p class="lead">And an even wittier subheading.</p>
+    <!-- Header -->
+    <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+        <img class="w3-image" src="/w3images/architect.jpg" alt="Architecture" width="1500" height="800">
+        <div class="w3-display-middle w3-margin-top w3-center">
+            <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>BR</b></span> <span
+                    class="w3-hide-small w3-text-light-grey">Architects</span></h1>
         </div>
-        <div class="bg-light box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-      </div>
-      <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-        <div class="my-3 p-3">
-          <h2 class="display-5">Another headline</h2>
-          <p class="lead">And an even wittier subheading.</p>
+    </header>
+
+    <!-- Page content -->
+    <div class="w3-content w3-padding" style="max-width:1564px">
+
+        <!-- Project Section -->
+        <div class="w3-container w3-padding-32" id="mdl_fanuc10L">
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">mdl_fanuc10L</h3>
         </div>
-        <div class="bg-dark box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-      </div>
+
+        <div class="w3-row-padding">
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
+                    <img src="/w3images/house5.jpg" alt="House" style="width:100%">
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
+                    <img src="/w3images/house2.jpg" alt="House" style="width:100%">
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
+                    <img src="/w3images/house3.jpg" alt="House" style="width:100%">
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
+                    <img src="/w3images/house4.jpg" alt="House" style="width:100%">
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row-padding">
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
+                    <img src="/w3images/house2.jpg" alt="House" style="width:99%">
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
+                    <img src="/w3images/house5.jpg" alt="House" style="width:99%">
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
+                    <img src="/w3images/house4.jpg" alt="House" style="width:99%">
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
+                    <img src="/w3images/house3.jpg" alt="House" style="width:99%">
+                </div>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div class="w3-container w3-padding-32" id="mdl_stanford">
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">mdl_stanford</h3>
+        </div>
+
+        <div class="w3-row-padding">
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
+                    <img src="/w3images/house5.jpg" alt="House" style="width:100%">
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
+                    <img src="/w3images/house2.jpg" alt="House" style="width:100%">
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
+                    <img src="/w3images/house3.jpg" alt="House" style="width:100%">
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
+                    <img src="/w3images/house4.jpg" alt="House" style="width:100%">
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row-padding">
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
+                    <img src="/w3images/house2.jpg" alt="House" style="width:99%">
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
+                    <img src="/w3images/house5.jpg" alt="House" style="width:99%">
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
+                    <img src="/w3images/house4.jpg" alt="House" style="width:99%">
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
+                    <img src="/w3images/house3.jpg" alt="House" style="width:99%">
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="w3-container w3-padding-32" id="contact">
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+            <p>Lets get in touch and talk about your next project.</p>
+            <form action="/action_page.php" target="_blank">
+                <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+                <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+                <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
+                <button class="w3-button w3-black w3-section" type="submit">
+                    <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                </button>
+            </form>
+        </div>
+
+        <!-- Image of location/map -->
+        <div class="w3-container">
+            <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
+        </div>
+
+        <!-- End page content -->
     </div>
 
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-      <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-        <div class="my-3 p-3">
-          <h2 class="display-5">Another headline</h2>
-          <p class="lead">And an even wittier subheading.</p>
-        </div>
-        <div class="bg-dark box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-      </div>
-      <div class="bg-primary mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-        <div class="my-3 py-3">
-          <h2 class="display-5">Another headline</h2>
-          <p class="lead">And an even wittier subheading.</p>
-        </div>
-        <div class="bg-light box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-      </div>
-    </div>
 
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-      <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-        <div class="my-3 p-3">
-          <h2 class="display-5">Another headline</h2>
-          <p class="lead">And an even wittier subheading.</p>
-        </div>
-        <div class="bg-white box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-      </div>
-      <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-        <div class="my-3 py-3">
-          <h2 class="display-5">Another headline</h2>
-          <p class="lead">And an even wittier subheading.</p>
-        </div>
-        <div class="bg-white box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-      </div>
-    </div>
-
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-      <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-        <div class="my-3 p-3">
-          <h2 class="display-5">Another headline</h2>
-          <p class="lead">And an even wittier subheading.</p>
-        </div>
-        <div class="bg-white box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-      </div>
-      <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-        <div class="my-3 py-3">
-          <h2 class="display-5">Another headline</h2>
-          <p class="lead">And an even wittier subheading.</p>
-        </div>
-        <div class="bg-white box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-      </div>
-    </div>
-
-    <footer class="container py-5">
-      <div class="row">
-        <div class="col-12 col-md">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mb-2"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
-          <small class="d-block mb-3 text-muted">© 2017-2018</small>
-        </div>
-        <div class="col-6 col-md">
-          <h5>Features</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="#">Cool stuff</a></li>
-            <li><a class="text-muted" href="#">Random feature</a></li>
-            <li><a class="text-muted" href="#">Team feature</a></li>
-            <li><a class="text-muted" href="#">Stuff for developers</a></li>
-            <li><a class="text-muted" href="#">Another one</a></li>
-            <li><a class="text-muted" href="#">Last time</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h5>Resources</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="#">Resource</a></li>
-            <li><a class="text-muted" href="#">Resource name</a></li>
-            <li><a class="text-muted" href="#">Another resource</a></li>
-            <li><a class="text-muted" href="#">Final resource</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h5>Resources</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="#">Business</a></li>
-            <li><a class="text-muted" href="#">Education</a></li>
-            <li><a class="text-muted" href="#">Government</a></li>
-            <li><a class="text-muted" href="#">Gaming</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h5>About</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="#">Team</a></li>
-            <li><a class="text-muted" href="#">Locations</a></li>
-            <li><a class="text-muted" href="#">Privacy</a></li>
-            <li><a class="text-muted" href="#">Terms</a></li>
-          </ul>
-        </div>
-      </div>
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-16">
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+                class="w3-hover-text-green">w3.css</a></p>
     </footer>
 
+</body>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="../../assets/js/vendor/popper.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <script src="../../assets/js/vendor/holder.min.js"></script>
-    <script>
-      Holder.addTheme('thumb', {
-        bg: '#55595c',
-        fg: '#eceeef',
-        text: 'Thumbnail'
-      });
-    </script>
-  
+</html>
 
-</body></html>
+</html>

@@ -1,0 +1,181 @@
+body{
+    background-color: #5390D9;
+    font-family: "Nunito", sans-serif;
+}
+
+.blurb h2{
+    color:#7400b8;
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+.blurb p{
+    color:WHITE;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2;
+}
+.content{
+    margin-bottom: 50px;
+}
+.icon{
+    height: 95px;
+    width: 95px;
+}
+.penguin{
+    height: 50px;
+    width: 50px;
+}
+#mainNavbar .nav-link{
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: white;
+    font-family: 'Hachi Maru Pop', cursive;
+}
+
+.navbar-brand{
+    margin-right: 7px;
+}
+
+.iconGate{
+    display: none;
+    color: #7400b8 !important;
+
+}
+.homeLeter{
+    display: block;
+}
+.home:hover .homeLeter{
+    display: none;
+}
+.home:hover .iconGate{
+    display: block;
+    margin-right: 30.5px;
+    margin-left: 29px;
+}
+.iconShop{
+    display: none;
+    color: #7400b8 !important;
+
+}
+.shopLeter{
+    display: block;
+}
+.shop:hover .shopLeter{
+    display: none;
+
+}
+.shop:hover .iconShop{
+    display: block;
+    margin-right: 29px;
+    margin-left: 29px;
+}
+.iconAbout{
+    display: none;
+    color: #7400b8 !important;
+}
+.aboutLeter{
+    display: block;
+}
+.about:hover .aboutLeter{
+    display: none;
+}
+.about:hover .iconAbout{
+    display: block;
+    width: 70px;
+    height: 50px;
+    margin-right: 22px;
+    margin-left: 25px;
+}
+
+
+
+#mainNavbar .navbar-brand{
+    color: #7400b8;
+    font-size: 1.5rem;
+    font-family: 'Noto Serif JP', serif;
+}
+
+#headingGroup span{
+    color: #7400b8;
+}
+#headingGroup h1{
+    font-weight: 100;
+    font-size: 10.7rem;
+    rotate: -50deg;
+}
+.navbar.scrolled{
+    background-color: #7374D4;
+    transition: background 500ms;
+}
+#login{
+    font-size: 1.15rem !important;
+}
+#register{
+    font-size: 1.15rem !important;
+}
+.rotate {
+    animation: rotation 8s infinite linear;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+.rotate:hover {
+animation: rotation 650ms infinite linear;
+}
+
+
+@media(max-width:1890px){
+    #headingGroup h1{
+        font-size: 9.5rem;
+    }
+}
+
+@media(max-width:1770px){
+    #headingGroup h1{
+        font-size: 8rem;
+    }
+
+}
+
+@media(max-width:1420px){
+    #headingGroup h1{
+        font-size: 7rem;
+    }
+}
+
+@media(max-width:1250px){
+    #headingGroup h1{
+        font-size: 5.5rem;
+    }
+
+}
+
+@media(max-width:1500px){
+    .blurb h2{
+        font-size: 2rem;
+    }
+    .blurb p{
+        font-size: 1rem;
+        line-height: 2.5rem;
+    }
+}
+@media(max-width:1200px){
+    .blurb h2{
+        font-size: 1.5rem;
+    }
+    .blurb p{
+        font-size: 0.7rem;
+        line-height: 2;
+        font-weight: 500;
+    }
+}
+
+
+
+
