@@ -29,42 +29,41 @@
 
 <body>
 
-    <!-- Navbar (sit on top) -->
+    <!-- Navbar -->
     <div class="w3-top">
         <div class="w3-bar w3-white w3-wide w3-padding w3-card">
             <a href="#home" class="w3-bar-item w3-button"><b>Projeto</b> Robótica</a>
             <div class="w3-right w3-hide-small">
                 <a href="#mdl_fanuc10L" class="w3-bar-item w3-button">mdl_fanuc10L</a>
                 <a href="#mdl_stanford" class="w3-bar-item w3-button">mdl_stanford</a>
-                <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+                <a href="#dev" class="w3-bar-item w3-button">Dev</a>
             </div>
         </div>
     </div>
 
-    <!-- Page content -->
     <div class="w3-content w3-padding" style="max-width:1564px">
 
-        <!-- Project Section -->
+        <!-- mdl_fanuc10L Section -->
         <div class="w3-container w3-padding-32" id="mdl_fanuc10L">
-            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">mdl_fanuc10L</h3>
+            <h1 class="w3-border-bottom w3-border-light-grey w3-padding-16">mdl_fanuc10L</h1>
         </div>
 
         <div class="w3-row-padding">
             <div class="w3-col l4 w3-margin-bottom">
                 <div class="w3-display-container">
-                    <img src="./Images/fn-qz.PNG" style="width: 350px; height: 350px;">
+                    <img src="./Images/fanuc/fn-qz.PNG" style="width: 350px; height: 350px;">
                     <div class="mb-3 w3-black w3-padding">Posição: qz = [0 0 0 0 0 0]</div>
                 </div>
             </div>
             <div class="w3-col l4 m6 w3-margin-bottom">
                 <div class="w3-display-container">
-                    <img src="./Images/fn-qr.PNG" style="width: 350px; height: 350px;">
+                    <img src="./Images/fanuc/fn-qr.PNG" style="width: 350px; height: 350px;">
                     <div class="mb-3 w3-black w3-padding">Posição: qr = [0 -pi/2 0 0 0 0]</div>
                 </div>
             </div>
             <div class="w3-col l4 m6 w3-margin-bottom">
                 <div class="w3-display-container">
-                    <img src="./Images/fn-qs.PNG" style="width: 350px; height: 350px;">
+                    <img src="./Images/fanuc/fn-qs.PNG" style="width: 350px; height: 350px;">
                     <div class="mb-3 w3-black w3-padding">Posição: qs = [0 -pi/2 pi/2 0 0 0]</div>
                 </div>
             </div>
@@ -73,99 +72,421 @@
         <div class="w3-row-padding">
             <div class="w3-col l4 w3-margin-bottom">
                 <div class="w3-display-container">
-                    <img src="./Images/fn-qn.PNG" style="width: 350px; height: 350px;">
+                    <img src="./Images/fanuc/fn-qn.PNG" style="width: 350px; height: 350px;">
                     <div class="mb-3 w3-black w3-padding">Posição: qn = [0 -pi/2 pi/2 0 pi/2 0]</div>
                 </div>
             </div>
             <div class="w3-col l4 m6 w3-margin-bottom">
                 <div class="w3-display-container">
-                    <img src="./Images/fn-qx.PNG" style="width: 350px; height: 350px;">
+                    <img src="./Images/fanuc/fn-qx.PNG" style="width: 350px; height: 350px;">
                     <div class="mb-3 w3-black w3-padding">Posição: qx = [0 -pi/2 pi/2 0 pi/2 -pi/2]</div>
                 </div>
             </div>
             <div class="w3-col l4 m6 w3-margin-bottom">
                 <div class="w3-display-container">
-                    <img src="./Images/fn-qy.PNG" alt="House" style="width: 350px; height: 350px">
+                    <img src="./Images/fanuc/fn-qy.PNG" alt="House" style="width: 350px; height: 350px">
                     <div class="mb-3 w3-black w3-padding">Posição: qy = [0 -pi/2 pi/2 pi/2 pi/2 -pi/2]
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- About Section -->
+        <div class="w3-row-padding">
+            <div class="w3-col l4 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <img src="./Images/fanuc/fn-qzr.gif" style="width: 350px; height: 350px;">
+                    <div class="mb-3 w3-black w3-padding">Animação do qz para o qr, ou seja, animação das juntas da
+                        posição [0 0 0 0] para [pi/2 -pi/2 0 0]</div>
+                </div>
+            </div>
+            <div class="w3-col l4 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <img src="./Images/fanuc/fn-qzs.gif" style="width: 350px; height: 350px;">
+                    <div class="mb-3 w3-black w3-padding">Animação do qz para o qs, ou seja, animação das juntas da
+                        posição [0 0 0 0] para [0 -pi/2 0 0 0 0]</div>
+                </div>
+            </div>
+            <div class="w3-col l4 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <img src="./Images/fanuc/fn-qzn.gif" alt="House" style="width: 350px; height: 350px">
+                    <div class="mb-3 w3-black w3-padding">Animação do qz para o qn, ou seja, animação das juntas da
+                        posição [0 0 0 0] para [0 -pi/2 pi/2 0 pi/2 0]
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row-padding">
+            <div class="w3-col l4 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <img src="./Images/fanuc/fn-qzx - Cópia.gif " style="width: 350px; height: 350px;">
+                    <div class="mb-3 w3-black w3-padding">Animação do qz para o qx, ou seja, animação das juntas da
+                        posição [0 0 0 0] para [0 -pi/2 pi/2 0 pi/2 -pi/2]</div>
+                </div>
+            </div>
+            <div class="w3-col l4 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <img src="./Images/fanuc/fn-qrn.gif" style="width: 350px; height: 350px;">
+                    <div class="mb-3 w3-black w3-padding">Animação do qr para o qn, ou seja, animação das juntas da
+                        posição [0 -pi/2 0 0 0 0] para [0 -pi/2 pi/2 0 pi/2 0] </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- mdl_fanuc10L GUI Section -->
+        <div class="w3-row-padding">
+            <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">GUI:</h2>
+            <div class="w3-col l5 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <img src="./Images/fanuc/fn-teach-qz.gif" style="width: 600px; height: 400px;">
+                </div>
+            </div>
+            <div class="w3-col m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <h2>Usando a função teach para mostrar uma GUI, sendo que ao utilizar esta função podemos alterar as
+                        posições das juntas do
+                        robô de todas as formas possivies, começando na posição qz.
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row-padding">
+            <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">Parâmetros de Denavit-Hartenberg, fkine e
+                ikine
+            </h2>
+            <div class="w3-col l6 m6 w3-margin-bottom">
+                <h3>Denavit-Hartenberg</h3>
+                <div class="w3-display-container l5">
+                    <img src="./Images/fanuc/Parâmetros de Denavit-Hartenberg.PNG" style="width: 700px; height: 500px;">
+                    <div class="mb-3 w3-black w3-padding-16">Os parâmetros de Denavit–Hartenberg são quatro
+                        parâmetros
+                        associados a uma convenção para fixar sistemas de referência
+                        aos elos de uma cadeia cinemática espacial, ou manipulador robótico:<br>
+                        <br>
+                        <b>theta:</b> ângulo em torno do z anterior, do x anterior até o x.<br>
+                        <br>
+                        <b>d:</b> distância ao longo do z anterior até a normal comum.<br>
+                        <br>
+                        <b>a:</b> comprimento da normal comum. No caso de uma junta rotacional, este é o raio ao redor
+                        do z
+                        anterior.<br>
+                        <br>
+                        <b>alpha:</b> ângulo em torno da normal comum, do z anterior ao z novo.<br>
+                        <br>
+                        Neste caso como as juntas 1, 2, 3, 4, 5 e 6 são de rotação, no theta aparecem os q1, q2, q3, q4,
+                        q5 e q6 referindo-se a
+                        cada uma delas.<br>
+                        <br>
+                        No a existem valores na junta 1, 2 e 3, que é o raio ao redor do z anterior.
+                        Relativamente ao alpha podemos confirmar que as juntas 1, 2, 3, 4 e 5 tem ângulo em torno da
+                        normal comum, do z anterior
+                        ao novo z.
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col m6 w3-margin-bottom">
+                <h3>Fkine</h3>
+                <div class="w3-display-container">
+                    <img src="./Images/fanuc/Fkine.PNG" style="width: 700px; height: 200px;">
+                    <div class="mb-3 w3-black w3-padding">Usando a função fkine da pose qs para ir buscar a
+                        transformação homogênea que representa a pose.
+                    </div>
+                </div>
+                <h3>Ikine</h3>
+                <div class="w3-display-container">
+                    <img src="./Images/fanuc/ikine.PNG" style="width: 700px; height: 220px;">
+                    <div class="mb-3 w3-black w3-padding">A função ikine são as coordenadas conjuntas (1 x N)
+                        correspondentes à pose do efetor final do robô T (6x6),
+                        que é uma transformação homogênea.</div>
+                </div>
+                <h3>Tictok</h3>
+                <div class="w3-display-container">
+                    <img src="./Images/fanuc/tictok.PNG" style="width: 700px; height: 180px;">
+                    <div class="mb-3 w3-black w3-padding">Função tic e toc serve para saber o intervalo de tempo que
+                        dura para que o matlab faça um determinado calculo.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Código mdl_fanuc10L-->
+        <div class="w3-row-padding">
+            <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">Código:</h2>
+            <div class="w3-col m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <h3>
+                        L(1) = Link([0 0 0.15 -pi/2 0 ]);<br>
+                        L(2) = Link([0 0 0.77 pi 0 ]);<br>
+                        L(3) = Link([0 0 0.1 -pi/2 0 ]);<br>
+                        L(4) = Link([0 -0.96 0 pi/2 0 ]);<br>
+                        L(5) = Link([0 0 0 -pi/2 0 ]);<br>
+                        L(6) = Link([0 -0.1 0 0 0 ]);<br>
+                        Fn=SerialLink(L, 'name', 'Fanuc AM120iB/10L');<br>
+                        <br>
+                        qz=[0 0 0 0 0 0]<br>
+                        qr=[0 -pi/2 0 0 0 0]<br>
+                        qs=[0 -pi/2 pi/2 0 0 0]<br>
+                        qn=[0 -pi/2 pi/2 0 pi/2 0]<br>
+                        qx=[0 -pi/2 pi/2 0 pi/2 -pi/2]<br>
+                        qy=[0 -pi/2 pi/2 pi/2 pi/2 -pi/2]<br>
+                        <br>
+                        qzr = jtraj(qz,qr,50);<br>
+                        qzs = jtraj(qz,qs,50);<br>
+                        qzn = jtraj(qz,qn,50);<br>
+                        qzx = jtraj(qz,qx,50);<br>
+                        qrn = jtraj(qr,qn,50);<br>
+                        <br>
+                        Fn<br>
+                        <br>
+                        T = Fn.fkine(qs)<br>
+                        <br>
+                        Fn.ikine(T, 'mask', [1 1 1 0 0 1])<br>
+                        <br>
+                        tic; Fn.ikine(T, 'mask', [1 1 1 0 0 1]); toc<br>
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16"></h2>
+
+        <!-- mdl_stanford Section -->
         <div class="w3-container w3-padding-32" id="mdl_stanford">
-            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">mdl_stanford</h3>
+            <h1 class="w3-border-bottom w3-border-light-grey w3-padding-16">mdl_stanford</h1>
         </div>
 
         <div class="w3-row-padding">
-            <div class="w3-col l3 m6 w3-margin-bottom">
+            <div class="w3-col l4 w3-margin-bottom">
                 <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
-                    <img src="/w3images/house5.jpg" alt="House" style="width:100%">
+                    <img src="./Images/stanford/qz.PNG" style="width: 350px; height: 350px;">
+                    <div class="mb-3 w3-black w3-padding">Posição: qz = [0 0 0 0 0 0]</div>
                 </div>
             </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
+            <div class="w3-col l4 m6 w3-margin-bottom">
                 <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
-                    <img src="/w3images/house2.jpg" alt="House" style="width:100%">
+                    <img src="./Images/stanford/qr.PNG" style="width: 350px; height: 350px;">
+                    <div class="mb-3 w3-black w3-padding">Posição: qr = [pi pi/4 0 0 0 0]</div>
                 </div>
             </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
+            <div class="w3-col l4 m6 w3-margin-bottom">
                 <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
-                    <img src="/w3images/house3.jpg" alt="House" style="width:100%">
-                </div>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
-                    <img src="/w3images/house4.jpg" alt="House" style="width:100%">
+                    <img src="./Images/stanford/qs.PNG" style="width: 350px; height: 350px;">
+                    <div class="mb-3 w3-black w3-padding">Posição: qs = [pi pi/4 pi/2 0 0 0]</div>
                 </div>
             </div>
         </div>
 
         <div class="w3-row-padding">
-            <div class="w3-col l3 m6 w3-margin-bottom">
+            <div class="w3-col l4 w3-margin-bottom">
                 <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
-                    <img src="/w3images/house2.jpg" alt="House" style="width:99%">
+                    <img src="./Images/stanford/qn.PNG" style="width: 350px; height: 350px;">
+                    <div class="mb-3 w3-black w3-padding">Posição: qn = [pi pi/1.5 pi/2 0 0 0]</div>
                 </div>
             </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
+            <div class="w3-col l4 m6 w3-margin-bottom">
                 <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
-                    <img src="/w3images/house5.jpg" alt="House" style="width:99%">
+                    <img src="./Images/stanford/qx.PNG" style="width: 350px; height: 350px;">
+                    <div class="mb-3 w3-black w3-padding">Posição: qx = [pi pi/1.5 pi/2 pi pi 0]</div>
                 </div>
             </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
+            <div class="w3-col l4 m6 w3-margin-bottom">
                 <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
-                    <img src="/w3images/house4.jpg" alt="House" style="width:99%">
-                </div>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
-                    <img src="/w3images/house3.jpg" alt="House" style="width:99%">
+                    <img src="./Images/stanford/qy.PNG" alt="House" style="width: 350px; height: 350px">
+                    <div class="mb-3 w3-black w3-padding">Posição: qy = [0 0 pi/2 0 0 0]
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- Contact Section -->
-        <div class="w3-container w3-padding-32" id="contact">
-            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
-            <p>Lets get in touch and talk about your next project.</p>
+        <div class="w3-row-padding">
+            <div class="w3-col l4 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <img src="./Images/stanford/qzr.gif" style="width: 350px; height: 350px;">
+                    <div class="mb-3 w3-black w3-padding">Animação do qz para o qr, ou seja, animação das juntas da
+                        posição [0 0 0 0 0 0] para [pi pi/4 0 0 0 0]</div>
+                </div>
+            </div>
+            <div class="w3-col l4 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <img src="./Images/stanford/qrs.gif" style="width: 350px; height: 350px;">
+                    <div class="mb-3 w3-black w3-padding">Animação do qr para o qs, ou seja, animação das juntas da
+                        posição [pi pi/4 0 0 0 0] para [pi pi/4 pi/2 0 0 0]</div>
+                </div>
+            </div>
+            <div class="w3-col l4 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <img src="./Images/stanford/qsn.gif" alt="House" style="width: 350px; height: 350px">
+                    <div class="mb-3 w3-black w3-padding">Animação do qs para o qn, ou seja, animação das juntas da
+                        posição [pi pi/4 pi/2 0 0 0] para [pi pi/1.5 pi/2 0 0 0]
+                    </div>
+                </div>
+            </div>
         </div>
 
+        <div class="w3-row-padding">
+            <div class="w3-col l4 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <img src="./Images/stanford/qnx.gif" style="width: 350px; height: 350px;">
+                    <div class="mb-3 w3-black w3-padding">Animação do qn para o qx, ou seja, animação das juntas da
+                        posição [pi pi/1.5 pi/2 0 0 0] para [pi pi/1.5 pi/2 pi pi 0]</div>
+                </div>
+            </div>
+            <div class="w3-col l4 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <img src="./Images/stanford/qxy.gif" style="width: 350px; height: 350px;">
+                    <div class="mb-3 w3-black w3-padding">Animação do qx para o qy, ou seja, animação das juntas da
+                        posição [pi pi/1.5 pi/2 pi pi 0] para [0 0 pi/2 0 0 0] </div>
+                </div>
+            </div>
+        </div>
 
-        <!-- End page content -->
+        <!-- mdl_stanford GUI Section -->
+        <div class="w3-row-padding">
+            <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">GUI:</h2>
+            <div class="w3-col l5 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <img src="./Images/stanford/teach qz.gif" style="width: 600px; height: 400px;">
+                </div>
+            </div>
+            <div class="w3-col m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <h2>Usando a função teach para mostrar uma GUI, sendo que ao utilizar esta função podemos alterar as
+                        posições das juntas do
+                        robô de todas as formas possivies, começando na posição qz.
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row-padding">
+            <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">Parâmetros de Denavit-Hartenberg, fkine e
+                ikine
+            </h2>
+            <div class="w3-col l6 m6 w3-margin-bottom">
+                <h3>Denavit-Hartenberg</h3>
+                <div class="w3-display-container l5">
+                    <img src="./Images/stanford/Parâmetros de Denavit-Hartenberg.PNG"
+                        style="width: 700px; height: 500px;">
+                    <div class="mb-3 w3-black w3-padding-16">Os parâmetros de Denavit–Hartenberg são quatro parâmetros
+                        associados a uma convenção para fixar sistemas de referência
+                        aos elos de uma cadeia cinemática espacial, ou manipulador robótico:<br>
+                        <br>
+                        <b>theta:</b> ângulo em torno do z anterior, do x anterior até o x.<br>
+                        <b>d:</b> distância ao longo do z anterior até a normal comum.<br>
+                        <b>a:</b> comprimento da normal comum. No caso de uma junta rotacional, este é o raio ao redor
+                        do z
+                        anterior.<br>
+                        <b>alpha:</b> ângulo em torno da normal comum, do z anterior ao z novo.<br>
+                        <br>
+                        Neste caso as juntas são de rotação, no theta aparecem os q1, q2, q4, q5 e q6 referindo-se a
+                        cada uma delas. Existe uma
+                        juntas de translação o q3 que corresponde ao d.<br>
+                        <br>
+                        No a não existem valores nas junta, consequentemente, o raio ao redor do z anterior. Nas junta
+                        1, 2, 3, 4, 5 e 6 não tem
+                        comprimento da normal comum.<br>
+                        <br>
+                        Relativamente ao alpha podemos confirmar que apenas as juntas 1, 2, 4 e 5 têm ângulo em torno da
+                        normal comum, do z
+                        anterior ao novo z.<br>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col m6 w3-margin-bottom">
+                <h3>Fkine</h3>
+                <div class="w3-display-container">
+                    <img src="./Images/stanford/fkine.PNG" style="width: 700px; height: 200px;">
+                    <div class="mb-3 w3-black w3-padding">Usando a função fkine da pose qs para ir buscar a
+                        transformação homogênea que representa a pose.
+                    </div>
+                </div>
+                <h3>Ikine</h3>
+                <div class="w3-display-container">
+                    <img src="./Images/stanford/ikine.PNG" style="width: 700px; height: 220px;">
+                    <div class="mb-3 w3-black w3-padding">A função ikine são as coordenadas conjuntas (1 x N)
+                        correspondentes à pose do efetor final do robô T (6x6),
+                        que é uma transformação homogênea.</div>
+                </div>
+                <h3>Tictok</h3>
+                <div class="w3-display-container">
+                    <img src="./Images/stanford/tic toc.PNG" style="width: 700px; height: 180px;">
+                    <div class="mb-3 w3-black w3-padding">Função tic e toc serve para saber o intervalo de tempo que
+                        dura para que o matlab faça um determinado calculo.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Código mdl_stanford-->
+        <div class="w3-row-padding">
+            <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">Código:</h2>
+            <div class="w3-col w3-margin-bottom">
+                <div class="w3-display-container">
+                    <h3>
+                        >> % th d a alpha<br>
+                        L(1) = Link([ 0 0.412 0 -pi/2 0]);<br>
+                        L(2) = Link([ 0 0.154 0 pi/2 0]);<br>
+                        L(3) = Link([ -pi/2 0 0 0 1]); % PRISMATIC link, faz com que o braço do nosso robô se
+                        estenda<br>
+                        L(4) = Link([ 0 0 0 -pi/2 0]);<br>
+                        L(5) = Link([ 0 0 0 pi/2 0]);<br>
+                        L(6) = Link([ 0 0 0 0 0]);<br>
+                        <br>
+                        %theta = ângulo da articulação<br>
+                        %d = offset do link da posição inicial<br>
+                        %a = length do link<br>
+                        %alpha = orientação do link (em radianos)<br>
+                        <br>
+                        %limita até onde as juntas(joints) podem ir [min max]<br>
+                        L(1).qlim = [-170 170]*pi/180;<br>
+                        L(2).qlim = [-170 170]*pi/180;<br>
+                        L(3).qlim = [12 12+38] * 0.0254;<br>
+                        L(4).qlim = [-170 170]*pi/180;<br>
+                        L(5).qlim = [-90 90]*pi/180;<br>
+                        L(6).qlim = [-170 170]*pi/180;<br>
+                        >> sta = SerialLink(L, 'name', 'Stanford arm');<br>
+                        >> %posições do nosso robô<br>
+                        qz = [0 0 0 0 0 0];<br>
+                        >> qr = [pi pi/4 0 0 0 0];<br>
+                        >> qs = [pi pi/4 pi/2 0 0 0];<br>
+                        >> qn=[pi pi/1.5 pi/2 0 0 0];<br>
+                        >> qx = [pi pi/1.5 pi/2 pi pi 0];<br>
+                        >> qy = [0 0 pi/2 0 0 0];<br>
+                        <br>
+                        >> %animação entre duas posições e o tempo de animação<br>
+                        >> qzr = jtraj(qz,qr,50);<br>
+                        >> qrs = jtraj(qr,qs,50);<br>
+                        >> qsn = jtraj(qs,qn,50);<br>
+                        >> qnx = jtraj(qn,qx,50);<br>
+                        >> qxy = jtraj(qx,qy,50);<br>
+                        <br>
+                        >> sta<br>
+                        <br>
+                        >> T= sta.fkine(qz)<br>
+                        <br>
+                        >> sta.ikine(T, 'mask', [1 1 1 0 0 1])<br>
+                        <br>
+                        >> tic; sta.ikine(T, 'mask', [1 1 1 0 0 1]); toc<br>
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16"></h2>
+
+        <!-- Dev Section -->
+        <div class="w3-container w3-padding-32" id="dev">
+            <h1 class="w3-border-bottom w3-border-light-grey w3-padding-16">Dev</h1>
+            <p>Este site serve como relatório do projeto da cadeira de
+                Sistemas de Robótica lecionada pelo
+                Professor Laércio
+                Cruvinel.
+                Projeto desenvolvido por: David Mezia, José Pedreira, Marcelo dos Santos, Rafael Rocha e Tomás Reis
+            </p>
+            <img
+                src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAclBMVEUAdqP///8AcqFspMEAb5+ixdcAdKIwi7AAapzy+vylwtT09/nc7fIAbJ0AcqAAaZzS5e0rhax9rsdSl7jG3Oery9vl7/SFtcxanLyXvtIXfqj2/v8OeqZypsK40+FIkbSevtEAY5jN4OpGjbKOuc/h8PQp2cM/AAAD9klEQVR4nO3bfXfaIBjGYYqYxrWp1pfYWrVbt33/r7gcazAvBEginuH5Xf8OkXskQJ5YIQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABCfZBRn71cbyOCAr4+juMftHdDxTbuBAdX0YZRHa4JEzuwNKtIP+zf9UP9jQvXnYZH5JpzFmHBfzMtE3nHCbFO0yO84YfJ6avLuN7QYE2aL7zb7e02oDuc2R6/FJsKESV42+vTZMeJLWOwUpUV6lwlFpdXSYz2NLmF2rLR6usOE8rPWbOpebGJLmD3X2+2ci01kCdWy0W7tnMTIEs5bw125bsW4Ehp6zef3lPB8IK1bOkYYVcJ0bWg5cxxPY0r48mZsurEvNjElzHL/tlEmlM2dovRlXWwiSig6S0pvth0jnoSn0oVZrizXaTQJk0dL661llNEknC9szS3H01gSyom1uWXHiCRhojp2itJr5yRGkrBSujBbdI4zjoTJzvmBQ9eOEUfC9Oj8QOeOEUVC4zNFU1cJ3JXw56/UpnMJu2rCzLpTlPbmSXQlfLLrfMd1zYS6yG3XUdBwJXR47qrJqu2ofh+qb2YTx05RMhc0QiXsfBDwVLmpsnffwRgXm1AJk9Wofj8u/XrsFKWDabEJlvDV8frcu9/MVLrokBkmMVRCoZ7G9LvRs5F8ultrphJ4sIR9/uvbLieU9Nnd+sJwPA03h6MWU/00JPt189WexGAJvc4hXXLdrer5yfaOESyhcD3v2EzL2zDre3DIWwMKl7Dn9VVTXqTW0oVZq6ARLqGQg3td6ynsv1x9NEvgARNaimMOq/MUSnOR227TGFLAhD0OI3X6Bwjtd2k+Gr/QCJiw/zLRGKKzdGH2VR9TyIRCDOpc/xBoP3BQ9RJ40ISOEqDZkx7a0Pt4JqvXadg5nLvrKy2T80La60BaVytohE0oZO9tXy+F9iK31Ue1BB44YbLr+YixLp9iB13hupfKsAInFC+/e/W30LdQMmpglTJP6IRC9YmY65/gK9/ShVmlQhY8YRHR+ysWqZ7BoaeF0uU3feETCrnzXG6OlyUwG7AI18z0ZXqDhCKRXjvbcq5HNeCZoknvGLdIWEzJm/Nr1rvKJqZ6lS7MyhL4bRIKmdhXjnxSLZONLbaelCXwGyUspmXffQ6fHVS9+DBuUGerl9smLDKqpemYMluv5rWD5OBnkubYvnu9YcJixVG75bG2sOabiWiWcUfvFKU/pzvb9ZddDn/7JDyFzNLdarLdTt+3y8nvfarab1PkYTO9iu+E8n1cJ55/fFSP+SJVQcqOt7anf72Ga3Q3JCAAAIibvHdicu/+Ab/GU0EBrV5aAAAAAElFTkSuQmCC'>
+        </div>
     </div>
 
-
-    <!-- Footer -->
-
 </body>
-
-</html>
 
 </html>

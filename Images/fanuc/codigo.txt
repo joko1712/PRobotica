@@ -1,0 +1,28 @@
+L(1) = Link([0        0     0.15  -pi/2   0  ]);
+L(2) = Link([0        0     0.77   pi     0  ]);
+L(3) = Link([0        0     0.1   -pi/2   0  ]);
+L(4) = Link([0       -0.96  0      pi/2   0  ]);
+L(5) = Link([0        0     0     -pi/2   0  ]);
+L(6) = Link([0       -0.1   0      0      0  ]);
+Fn=SerialLink(L, 'name', 'Fanuc AM120iB/10L');
+
+qz=[0 0 0 0 0 0]
+qr=[0 -pi/2 0 0 0 0]
+qs=[0 -pi/2 pi/2 0 0 0]
+qn=[0 -pi/2 pi/2 0 pi/2 0]
+qx=[0 -pi/2 pi/2 0 pi/2 -pi/2]
+qy=[0 -pi/2 pi/2 pi/2 pi/2 -pi/2]
+
+qzr = jtraj(qz,qr,50);
+qzs = jtraj(qz,qs,50);
+qzn = jtraj(qz,qn,50);
+qzx = jtraj(qz,qx,50);
+qrn = jtraj(qr,qn,50);
+
+Fn
+
+T = Fn.fkine(qs)
+ 
+Fn.ikine(T, 'mask', [1 1 1 0 0 1])
+
+tic; Fn.ikine(T, 'mask', [1 1 1 0 0 1]); toc
